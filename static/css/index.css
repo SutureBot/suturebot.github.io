@@ -14,24 +14,25 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
-  color: white;
+  background: white;
+  color: #2c3e50;
 }
 
 .publication-title {
   font-family: 'Google Sans', sans-serif;
   font-weight: 700;
-  color: white !important;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  color: #2c3e50 !important;
+  text-shadow: none;
 }
 
 .publication-authors {
   font-family: 'Google Sans', sans-serif;
   font-weight: 500;
+  color: #2c3e50;
 }
 
 .publication-authors a {
-  color: #ffd700 !important;
+  color: #3498db !important;
   text-decoration: none;
 }
 
@@ -40,7 +41,7 @@ body {
 }
 
 .publication-conference {
-  color: #e8f4fd;
+  color: #7f8c8d;
   font-weight: 600;
 }
 
