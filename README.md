@@ -1,15 +1,14 @@
-# Nerfies
+# SutureBot
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [SutureBot project website](https://suturebot.github.io).
+
+The website template was adapted from the [Nerfies project](https://nerfies.github.io).
+
+If you find SutureBot useful for your work please cite:
 
 If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}
+@inproceedings{haworth2025suturebot, author = {Haworth, Jesse and Chen, Juo-Tung and Nelson, Nigel and Kim, Ji Woong and Moghani, Masoud and Finn, Chelsea and Krieger, Axel}, title = {SutureBot: A Precision Framework & Benchmark For Autonomous End-to-End Suturing}, booktitle = {Conference on Neural Information Processing Systems (NeurIPS)}, year = {2025}, }
 ```
 
 # Website License
