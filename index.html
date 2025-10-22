@@ -132,7 +132,7 @@
 
 <section class="section" id="demo">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Video Demonstration</h2>
+    <h2 class="title is-3 has-text-centered">Autonomous Suturing Demonstration</h2>
     <div class="columns is-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-centered">
@@ -162,7 +162,7 @@
             Despite numerous efforts toward end-to-end autonomy, a fully autonomous suturing pipeline has yet to be demonstrated on physical hardware. We introduce SutureBot: an autonomous suturing benchmark on the da Vinci Research Kit (dVRK), spanning needle pickup, tissue insertion, and knot tying. To ensure repeatability, we release a high-fidelity dataset comprising 1,890 suturing demonstrations.
           </p>
           <p>
-            Furthermore, we propose a goal-conditioned framework that explicitly optimizes insertion-point precision, improving targeting accuracy by 59%-74% over a task-only baseline. To establish this task as a benchmark for dexterous imitation learning, we evaluate state-of-the-art vision-language-action (VLA) models, including π-O, GR00T N1, OpenVLA-OFT, and multitask ACT, each augmented with a high-level task-prediction policy. Autonomous suturing is a key milestone toward achieving robotic autonomy in surgery. These contributions support reproducible evaluation and development of precision-focused, long-horizon dexterous manipulation policies necessary for end-to-end suturing.
+            Furthermore, we propose a goal-conditioned framework that explicitly optimizes insertion-point precision, improving targeting accuracy by 59%-74% over a task-only baseline. To establish this task as a benchmark for dexterous imitation learning, we evaluate state-of-the-art vision-language-action (VLA) models, including π<sub>0</sub>, GR00T N1, OpenVLA-OFT, and multitask ACT, each augmented with a high-level task-prediction policy. Autonomous suturing is a key milestone toward achieving robotic autonomy in surgery. These contributions support reproducible evaluation and development of precision-focused, long-horizon dexterous manipulation policies necessary for end-to-end suturing.
           </p>
         </div>
       </div>
@@ -178,7 +178,7 @@
         <div class="content has-text-centered">
           <img src="./static/images/architecture_overview.png" alt="Overview of the precision-conditioned control framework for long-horizon, dexterous surgical tasks." style="width: 100%; max-width: 1200px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
           <p class="subtitle is-5 has-text-centered" style="margin-top: 1rem;">
-            SutureBot's precision-conditioned control framework for autonomous end-to-end suturing on the da Vinci Research Kit (dVRK).
+            Overview of SutureBot's precision-conditioned control framework for long-horizon, dexterous surgical tasks. Image observations are processed by a high-level language policy, which selects the current task and generates the associated language condition. The user specifies target needle insertion and exit points via a graphical interface, which is used to generate the goal condition. These inputs, language condition, goal condition, and real-time kinematic data, are then processed by the low-level policy to produce precise, continuous control commands for the robot.
           </p>
         </div>
       </div>
@@ -205,7 +205,7 @@
         <div class="content">
           <h3 class="title is-4">Precision-Conditioned Control</h3>
           <p>
-            Our goal-conditioned framework explicitly optimizes insertion-point precision through precision-conditioned control, achieving 59%-74% improvement in targeting accuracy compared to task-only baselines. The framework incorporates both high-level task planning and low-level precision control.
+            Our goal-conditioned framework allows control of insertion-point precision through goal-conditioning, achieving 59%-74% improvement in targeting accuracy compared to task-only baselines. We use three goal condition representations: point label, binary mask, and distance map.
           </p>
           <img src="./static/images/goal_conditions.png" alt="Goal condition representations: Point Label, Binary Mask, Distance Map, and None." style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
         </div>
@@ -251,7 +251,7 @@
         <div class="content">
           <h3 class="title is-4">Precision Targeting Performance</h3>
           <p>
-            Our precision-conditioned control framework demonstrates significant improvements in insertion-point targeting accuracy, achieving 59%-74% better precision compared to task-only baselines. The framework shows robust performance across different suturing subtasks and environmental conditions, establishing a new benchmark for surgical precision.
+            Our precision-conditioned control framework demonstrates significant improvements in insertion-point targeting accuracy, achieving 59%-74% better precision compared to task-only baselines. The evaluation shows that the point label goal condition achieves the highest precision on both ACT and π<sub>0</sub>. 
           </p>
           <img src="./static/images/table1.png" alt="Table 1: Success rates and precision results for different goal conditions on the suturing procedure." style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
         </div>
