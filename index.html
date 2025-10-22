@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SutureBot: A Precision Framework & Benchmark For Autonomous End-to-End Suturing.">
+  <meta name="keywords" content="SutureBot, Robotics, Surgical, NeRF, dVRK, Imitation Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SutureBot: A Precision Framework & Benchmark For Autonomous End-to-End Suturing</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://suturebot.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      <span>Home</span>
+      </a>
+
+      </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          [cite_start]<h1 class="title is-1 publication-title">SutureBot: A Precision Framework & Benchmark For Autonomous End-to-End Suturing [cite: 18]</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Jesse Haworth<sup>1</sup>,</span>
+            <span class="author-block">
+              Juo-Tung Chen<sup>1</sup>,</span>
+            <span class="author-block">
+              Nigel Nelson<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Ji Woong Kim<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Masoud Moghani<sup>2,4</sup>,
+            </span>
+            <span class="author-block">
+              Chelsea Finn<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Axel Krieger<sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Johns Hopkins University,</span>
+            <span class="author-block"><sup>2</sup>NVIDIA,</span>
+            <span class="author-block"><sup>3</sup>Stanford University,</span>
+            [cite_start]<span class="author-block"><sup>4</sup>University of Toronto [cite: 20]</span>
+          </div>
+
+          <div class="is-size-5 publication-conference">
+            [cite_start]Conference on Neural Information Processing Systems (NeurIPS) 2025 [cite: 51]
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="./SutureBot_NeurIPS_2025.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https_hugging_face_link" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  [cite_start]<span>Data [cite: 50]</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="https_github_com_suturebot" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/suturebot_overview.png" alt="SutureBot Overview" /> <h2 class="subtitle has-text-centered">
+        [cite_start]Overview of the precision-conditioned control framework for long-horizon, dexterous surgical tasks[cite: 37].
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          [cite_start]<h3 class="title is-4 has-text-centered">Experimental Setup [cite: 130]</h3>
+          <img src="./static/images/fig2_setup.png" alt="dVRK setup" /> </div>
+        <div class="item">
+           [cite_start]<h3 class="title is-4 has-text-centered">Suturing Tasks [cite: 186]</h3>
+          <img src="./static/images/fig3_tasks.png" alt="Suturing tasks" /> </div>
+        <div class="item">
+           [cite_start]<h3 class="title is-4 has-text-centered">Goal Condition Representations [cite: 257]</h3>
+          <img src="./static/images/fig4_goal_reps.png" alt="Goal representations" /> </div>
+        <div class="item">
+           [cite_start]<h3 class="title is-4 has-text-centered">Precision Measurement [cite: 315]</h3>
+          <img src="./static/images/fig5_uv_marks.png" alt="UV mark measurement" /> </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            [cite_start]Robotic suturing is a prototypical long-horizon dexterous manipulation task, requiring coordinated needle grasping, precise tissue penetration, and secure knot tying[cite: 42].
+          </p>
+          <p>
+            [cite_start]Despite numerous efforts toward end-to-end autonomy, a fully autonomous suturing pipeline has yet to be demonstrated on physical hardware[cite: 43]. [cite_start]We introduce SutureBot: an autonomous suturing benchmark on the da Vinci Research Kit (dVRK), spanning needle pickup, tissue insertion, and knot tying[cite: 44]. [cite_start]To ensure repeatability, we release a high-fidelity dataset comprising 1,890 suturing demonstrations[cite: 45].
+          </p>
+          <p>
+            [cite_start]Furthermore, we propose a goal-conditioned framework that explicitly optimizes insertion-point precision, improving targeting accuracy by 59%-74% over a task-only baseline[cite: 46]. [cite_start]To establish this task as a benchmark for dexterous imitation learning, we evaluate state-of-the-art vision-language-action (VLA) models, including π-O, GR00T N1, OpenVLA-OFT, and multitask ACT, each augmented with a high-level task-prediction policy[cite: 47]. [cite_start]Autonomous suturing is a key milestone toward achieving robotic autonomy in surgery[cite: 48]. [cite_start]These contributions support reproducible evaluation and development of precision-focused, long-horizon dexterous manipulation policies necessary for end-to-end suturing[cite: 49].
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Experimental Setup</h2>
+          <p>
+            [cite_start]Our data-collection setup uses the da Vinci Research Kit (dVRK) Si version[cite: 153, 157]. [cite_start]We use a Soft Tissue Suture Pad as the task surface[cite: 158]. [cite_start]The setup includes wrist cameras, an endoscope, robot grippers, and a suture needle on the pad[cite: 130]. [cite_start]Data was collected on wound one, while wounds two through six are reserved for generalization testing[cite: 132].
+          </p>
+          <img src="./static/images/fig2_setup.png" alt="dVRK setup" /> </div>
+      </div>
+      <div class="column">
+        <h2 class="title is-3">Suturing Tasks</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              [cite_start]We decompose the suturing procedure into three distinct tasks: needle pickup, needle throw, and knot tie[cite: 176, 186]. [cite_start]These discretizations were used for data collection, policy training, and evaluation[cite: 187].
+            </p>
+            <img src="./static/images/fig3_tasks.png" alt="Suturing tasks" /> </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{haworth2025suturebot,
+  author    = {Haworth, Jesse and Chen, Juo-Tung and Nelson, Nigel and Kim, Ji Woong and Moghani, Masoud and Finn, Chelsea and Krieger, Axel},
+  title     = {SutureBot: A Precision Framework & Benchmark For Autonomous End-to-End Suturing},
+  booktitle = {Conference on Neural Information Processing Systems (NeurIPS)},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./SutureBot_NeurIPS_2025.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https_github_com_suturebot" class="external-link" disabled> <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This website template was borrowed from the <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
